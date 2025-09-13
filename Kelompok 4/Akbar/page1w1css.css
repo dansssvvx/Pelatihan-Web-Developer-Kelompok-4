@@ -1,9 +1,16 @@
 /* Reset */
-html, body {
-  padding: 0 50px;
-  font-family: "Roboto", sans-serif;
-
+* { /* CHANGE: pakai universal reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 80px; /* CHANGE: ganti margin manual konten → padding top utk offset navbar */
+  background-color: #fff; /* optional */
+}
+
 /* Navbar wrapper */
 .wrapper {
   width: 100%;
@@ -12,14 +19,13 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0;
   box-shadow: 0 7px 15px rgba(0,0,0,0.5);
-  border-radius: 10px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   border-radius: 0 0 10px 10px;
+  padding: 0 50px; /* CHANGE: pakai padding di wrapper, bukan di brand */
 }
 
 /* Brand kiri */
@@ -30,7 +36,7 @@ html, body {
   text-transform: capitalize;
   color: white;
   font-weight: 700;
-  margin: 0 100px;
+  /* CHANGE: hapus margin 0 100px karena sudah di-handle padding parent */
 }
 
 .logo {
@@ -79,7 +85,7 @@ html, body {
   position: relative;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -89,11 +95,7 @@ html, body {
   min-width: 180px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  display: block;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
+  display: none; /* CHANGE: lebih clean dari pada opacity 0 + visibility hidden */
 }
 
 .dropdown-menu > li > a {
@@ -110,8 +112,7 @@ html, body {
 }
 
 .dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
+  display: block; /* CHANGE: tampilkan saat hover */
 }
 
 .active {
@@ -127,7 +128,7 @@ html, body {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 6px solid white; /* warna panah */
+  border-top: 6px solid white;
   transition: transform 0.3s ease;
 }
 
@@ -135,12 +136,11 @@ html, body {
   transform: rotate(180deg);
 }
 
-
 /* Button kanan */
 .btn-container {
   display: flex;
   align-items: center;
-  margin-right: 100px;
+  /* CHANGE: hapus margin-right 100px karena sudah ada padding wrapper */
 }
 
 .btn-login {
@@ -158,41 +158,42 @@ html, body {
   background-color: crimson;
 }
 
-.hotel1 {
+/* Hero Section (dulu .hotel1) */
+.hero-section { /* CHANGE: ganti nama class */
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
-  margin: 125px 10px;
-  gap: 5px;
-
+  gap: 20px; /* CHANGE: lebih lapang daripada 5px */
+  padding: 20px 50px; /* CHANGE: biar konsisten spacing */
 }
 
-.hotel1 .konten-left > h2 {
+.hero-section .konten-left > h2 {
   font-size: 72px;
   margin-bottom: 10px;
 }
 
-.hotel1 .konten-left > p {
+.hero-section .konten-left > p {
   font-size: 28px;
+  margin-bottom: 20px; /* CHANGE: tambah spasi bawah */
 }
 
-.hotel1 .konten-right > img {
+.hero-section .konten-right > img {
   width: 500px;
   height: 500px;
+  object-fit: cover; /* CHANGE: pastikan gambar ga gepeng */
+  border-radius: 10px; /* CHANGE: biar konsisten dengan style rounded */
 }
 
-.button-pesan, .button-pelajari{
+.button-pesan, .button-pelajari {
   padding: 10px 20px;
   font-size: 24px;
-  margin-left: 0px;
   border-radius: 10px;
+  margin-right: 20px;
 }
 
 .button-pesan {
   background-color: black;
   color: white;
-  margin-right: 20px;
   transition: all 0.3s ease;
 }
 
@@ -203,8 +204,7 @@ html, body {
 }
 
 .button-pesan:hover, .button-pelajari:hover {
-  transform: scale(1.25);
+  transform: scale(1.15); /* CHANGE: scale dikurangi agar lebih halus */
   background-color: crimson;
   color: #fff;
 }
-
