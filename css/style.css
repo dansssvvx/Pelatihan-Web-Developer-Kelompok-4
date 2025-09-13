@@ -179,7 +179,7 @@ p {
 }
 
 .hero-section .konten-right > img {
-  width: 500px;
+  width: 515px;
   height: 500px;
   object-fit: cover; /* CHANGE: pastikan gambar ga gepeng */
   border-radius: 10px; /* CHANGE: biar konsisten dengan style rounded */
@@ -393,4 +393,109 @@ a{
   margin-bottom: 30px;
 }
 /* end css sign up */
-/* akbar tanda */
+
+/* ========== CONTACT SECTION ========== */
+.contact-section {
+  padding: 20px 50px;
+  background: #fff; /* CHANGE: putih polos */
+  margin-top: 40px;
+  text-align: left; /* CHANGE: kiri */
+}
+
+.contact-section h3 {
+  font-size: 23px; /* CHANGE: lebih kecil */
+  color: black; /* CHANGE: abu gelap */
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.contact-section h2 {
+  font-size: 68px; /* CHANGE: lebih kecil */
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111; /* hitam pekat */
+}
+
+.contact-section p {
+  color: #555;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Container 2 kolom */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0;            /* UBAH: biar kontainer nempel kiri */
+  padding-left: 0px;   /* opsional: kasih jarak aman dari kiri */
+}
+
+/* Kiri */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* CHANGE: lebih rapat */
+}
+
+/* Item */
+.contact-item {
+  display: flex;
+  flex-direction: column;   /* NEW: icon di atas teks */
+  align-items: flex-start;  /* NEW: biar sejajar ke kiri */
+  text-align: left;
+  gap: 6px;                 /* NEW: jarak kecil */
+}
+
+.contact-icon {
+  margin-bottom: 6px; /* NEW: jarak icon ke teks */
+  width: 28px;        /* opsional: lebih besar */
+  height: 28px;
+  color: #111;
+}
+
+
+.contact-item h4 {
+  margin: 0;
+  font-size: 16px; /* CHANGE: lebih kecil */
+  font-weight: 600;
+  color: #111;
+}
+
+.contact-item p {
+  margin: 2px 0;
+  font-size: 14px; /* CHANGE */
+  color: #555;
+  margin: 15px 0px;
+}
+
+.contact-item a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+  color: crimson;
+}
+
+/* Kanan */
+.contact-map {
+  flex: 1.2;
+  min-width: 320px;
+}
+
+.contact-map img {
+  width: 773.8px;
+  margin-left: 115px;   /* CHANGE: konsisten dengan hero-section */
+  height: 450px;
+  object-fit: cover; /* CHANGE: biar proporsional */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
