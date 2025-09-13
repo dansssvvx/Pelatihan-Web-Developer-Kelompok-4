@@ -152,6 +152,7 @@ html, body {
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .btn-login:hover {
@@ -378,6 +379,7 @@ a{
 .signup-footer a {
   color: #007bff;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .signup-footer a:hover {
