@@ -365,10 +365,10 @@ a{
 }
 
 .google-icon {
-  background: #fff;
-  color: #db4437;
-  font-weight: bold;
-  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .signup-footer {
