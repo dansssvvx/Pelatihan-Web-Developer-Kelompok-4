@@ -248,9 +248,10 @@ a{
             margin-bottom: 24px;
         }
         .facility-image img {
+            overflow: hidden;
             opacity: 1.5;
             object-fit: cover;
-            width: 100%;
+            width: 190%;
             height: 100%;
         }
         .facility-content {
