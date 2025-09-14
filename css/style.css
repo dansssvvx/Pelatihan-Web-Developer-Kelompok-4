@@ -415,7 +415,7 @@ a{
   align-items: center;
   background: #fff;
   position: relative;
-  border: 2.5px solid rgba(0, 0, 0, 0.75);
+  border: 2.5px solid rgba(0, 0, 0, 0.132);
   border-radius: 15px 0 0 15px ;
 }
 
@@ -495,7 +495,7 @@ a{
 
 /* Kanan: ilustrasi */
 .login-right {
-  border: 2.5px solid rgba(0, 0, 0, 0.75);
+  border: 2.5px solid rgba(0, 0, 0, 0.132);
   border-radius: 0px 15px 15px 0px ;
   flex: 1;
   width: 50%;
