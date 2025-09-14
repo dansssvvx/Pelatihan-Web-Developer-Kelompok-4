@@ -162,6 +162,7 @@ html, body {
 
 /* Hero Section (dulu .hotel1) */
 .hero-section { /* CHANGE: ganti nama class */
+  margin-top: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
