@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Hotel AmbaGuy</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+  <div class="login-container">
+    <!-- Kiri: Form Login -->
+    <div class="login-left">
+      <div class="login-box">
+        <img src="../assets/logotemp.jpeg" alt="Logo" class="login-logo">
 
-  <!-- Logo atas -->
-  <div class="signup-logo">
-    <img src="../assets/logotemp.jpeg" alt="Logo Hotel AmbaGuy">
-  </div>
+        <h2><strong>Log In</strong></h2>
+        <p>Welcome back! Please log in to continue.</p>
 
-  <!-- Card form -->
-  <div class="signup-card">
-    <h2>Log In</h2>
-    <p>Welcome back! Please enter your details.</p>
+        <form>
+          <label>Email*</label>
+          <input type="email" placeholder="Enter your email" required>
 
-    <form>
-      <label for="email">Email*</label>
-      <input type="email" id="email" name="email" required>
+          <div class="label-row">
+            <label>Password*</label>
+            <a href="#" class="forgot-link">Forgot your password?</a>
+          </div>
+          <input type="password" placeholder="Enter your password" required>
 
-      <label for="password">Password*</label>
-      <input type="password" id="password" name="password" required>
+          <button type="submit" class="btn-primary">Log in</button>
 
-      <button type="submit" class="btn-primary">Log In</button>
-
-      <button type="button" class="btn-google">
-        <img src="https://developers.google.com/identity/images/g-logo.png" 
+          <button type="button" class="btn-google">
+            <img src="https://developers.google.com/identity/images/g-logo.png" 
             alt="Google logo" class="google-icon">
-        Log in with Google
-      </button>
-    </form>
+            Sign up with Google
+          </button>
+        </form>
 
-    <p class="signup-footer">
-      Don't have an account? <a href="signup.html">Sign Up</a>
-    </p>
+        <p class="signup-footer">
+          Don't have an account? <a href="signup.html">Sign up</a>
+        </p>
+
+        <footer class="login-footer">© 2025 Fantastic Four</footer>
+      </div>
+    </div>
+
+    <!-- Kanan: Ilustrasi -->
+    <div class="login-right">
+      <img src="https://picsum.photos/800/1000" alt="Login Illustration" class="illustration">
+    </div>
   </div>
-
-  <footer class="signup-copy">
-    © 2025 NamaKelompok
-  </footer>
-
 </body>
 </html>
-
-<!-- akbar tanda -->
