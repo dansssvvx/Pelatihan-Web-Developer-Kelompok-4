@@ -616,3 +616,42 @@ a{
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Testimonial Section */
+.testimonial-section {
+  flex-direction: column;
+}
+
+.testimonial-section .atas {
+  text-align: center;
+}
+
+.testimonial-section .atas h2 {
+  font-size: 28px;
+}
+
+.testimonial-section .atas p {
+  font-size: small;
+}
+
+.testimonial-section .bawah {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.testimonial-section .card-testimonial {
+  text-align: center;
+}
+
+.testimonial-section .card-testimonial p {
+  font-size: small;
+}
+
+.testimonial-section .card-testimonial img {
+  border-radius: 100px;
+}
+
+.testimonial-section .card-testimonial .position {
+  font-size: 10px;
+}
