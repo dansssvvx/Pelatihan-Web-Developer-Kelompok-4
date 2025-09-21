@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h1>Hello World1</h1>
+</body>
+<script src="tesweek3.js"></script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="tesweek3.php" method="POST">
+        <label for="nama">Masukkan Nama Anda:</label>
+        <input type="text" name="nama_lengkap"> <br>
+        <label for="email">Masukkan Email Anda:</label>
+        <input type="email" name="email"> <br>
+        <label for="password">Masukkan Password Anda:</label>
+        <input type="password" name="password" id="password"> <br>
+        <button type="submit">Kirim</button>
+    </form> -->
+
+    <h1>Form Registrasi Sederhana</h1> <br>
+    <h1>Silahkan isi data di bawah ini</h1>
+
+    <form id="formRegistrasi" action="proses_registrasi.php" method="POST" onsubmit="return validasiForm()"> 
+
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" name="nama_lengkap"> <br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"> <br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"> <br><br>
+
+    <button type="submit">Daftar</button>
+    </form>
+
+    <script src="tesweek3.js"></script>
+
+</body>
+</html>
