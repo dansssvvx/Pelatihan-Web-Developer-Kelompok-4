@@ -22,4 +22,6 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
   }
 
   alert("Registration successful!\nWelcome, " + name);
+
+  window.location.href = "index.html";
 });
