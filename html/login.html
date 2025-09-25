@@ -16,15 +16,15 @@
         <h2><strong>Log In</strong></h2>
         <p>Welcome back! Please log in to continue.</p>
 
-        <form>
+        <form id="loginForm">
           <label>Email*</label>
-          <input type="email" placeholder="Enter your email" required>
+          <input type="email" id="email" placeholder="Enter your email">
 
           <div class="label-row">
             <label>Password*</label>
             <a href="#" class="forgot-link">Forgot your password?</a>
           </div>
-          <input type="password" placeholder="Enter your password" required>
+          <input type="password" id="password" placeholder="Enter your password" required>
 
           <button type="submit" class="btn-primary">Log in</button>
 
@@ -48,5 +48,6 @@
       <img src="https://picsum.photos/800/1000" alt="Login Illustration" class="illustration">
     </div>
   </div>
+  <script src="../script/login.js"></script>
 </body>
 </html>
